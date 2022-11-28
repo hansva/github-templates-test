@@ -24,14 +24,14 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report! Once you've created an issue, you can self-assign by commenting 
-  - type: textarea
+  - type: input
     id: hop-version
     attributes:
       label: What is the Apache Hop version you are using?
       description: Fill in the Apache Hop version, if it's the version currently under developement use SNAPSHOT-yyyMMdd format.
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: java-version
     attributes:
       label: What is the Java version you are using?
