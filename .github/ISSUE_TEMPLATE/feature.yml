@@ -37,7 +37,7 @@ body:
     id: priority
     attributes:
       label: Issue Priority
-      description: What priority is this feature? See https://hop.apache.org/community/contribution-guides/priority-guide/ for the meaning and expectations around issue priorities.
+      description: What priority is this feature? See [priority guide](https://hop.apache.org/community/contribution-guides/priority-guide/) for the meaning and expectations around issue priorities.
       options:
         - "Priority: 3"
         - "Priority: 2"

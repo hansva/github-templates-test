@@ -69,7 +69,7 @@ body:
     id: priority
     attributes:
       label: Issue Priority
-      description: What priority is this bug? See <a href="https://hop.apache.org/community/contribution-guides/priority-guide/" target="_blank">priority guide</a> for the meaning and expectations around issue priorities.
+      description: What priority is this bug? See [priority guide](https://hop.apache.org/community/contribution-guides/priority-guide/) for the meaning and expectations around issue priorities.
       options:
         - "Priority: 3"
         - "Priority: 2"
