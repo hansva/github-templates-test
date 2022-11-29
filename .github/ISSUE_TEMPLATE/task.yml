@@ -30,7 +30,7 @@ body:
     id: what-happened
     attributes:
       label: What needs to happen?
-      description: Please describe your issue
+      description: Please describe the task
     validations:
       required: true
   - type: dropdown

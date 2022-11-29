@@ -30,7 +30,7 @@ body:
     id: what-happened
     attributes:
       label: What would you like to happen?
-      description: Please describe your issue
+      description: Please describe your feature request
     validations:
       required: true
   - type: dropdown
