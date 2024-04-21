@@ -38,7 +38,9 @@ jobs:
               sort: 'due_on',
               direction: 'asc'
             })
-            const milestone = list.data
+            for( const milestone : list.data) {
+              if ( milestone.due_on !== null ) { break; }
+            }
             console.log(milestone)
             return milestone.length == 0 ? null : milestone[0].number
       - name: add milestone
