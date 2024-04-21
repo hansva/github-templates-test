@@ -41,7 +41,7 @@ jobs:
             for( const milestone of list.data) {
               if ( milestone.due_on !== null ) { 
                 console.log(milestone)
-                return milestone.length == 0 ? null : milestone[0].number
+                return milestone.number
                 break; 
               }
             }
