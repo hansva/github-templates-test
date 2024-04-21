@@ -21,11 +21,9 @@ on:
 
 jobs:
   assign:
-    permissions:
-      issues: write
     name: Add milestone to closed PR
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged
     steps:
       - name: Get project milestones
         id: milestones
