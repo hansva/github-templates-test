@@ -39,10 +39,13 @@ jobs:
               direction: 'asc'
             })
             for( const milestone of list.data) {
-              if ( milestone.due_on !== null ) { break; }
+              if ( milestone.due_on !== null ) { 
+                console.log(milestone)
+                return milestone.length == 0 ? null : milestone[0].number
+                break; 
+              }
             }
-            console.log(milestone)
-            return milestone.length == 0 ? null : milestone[0].number
+            return null
       - name: add milestone
         uses: actions/github-script@v7
         with:
