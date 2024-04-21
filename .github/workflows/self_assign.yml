@@ -38,7 +38,9 @@ jobs:
               sort: 'due_on',
               direction: 'asc'
             })
-            return list.data.length == 0 ? null : list.data[0].number
+            const milestone = milestones.data
+            console.log(milestone)
+            return milestone.length == 0 ? null : milestone[0].number
       - uses: actions/github-script@v7
         with:
           script: |
