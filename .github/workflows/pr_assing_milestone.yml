@@ -25,7 +25,6 @@ jobs:
     permissions:
       issues: write
     name: Add milestone to closed PR
-    if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     steps:
       - name: Get project milestones
