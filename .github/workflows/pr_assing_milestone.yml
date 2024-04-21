@@ -16,6 +16,7 @@
 name: Assign Milestone to pull request
 on:
   pull_request:
+  types: [closed]
   push:
     branches:
       - main
@@ -26,6 +27,7 @@ jobs:
       issues: write
     name: Add milestone to closed PR
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == false
     steps:
       - name: Get project milestones
         id: milestones
